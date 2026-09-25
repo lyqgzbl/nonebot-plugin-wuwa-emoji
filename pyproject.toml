@@ -6,6 +6,8 @@ readme = "README.md"
 authors = [
     { name = "lyqgzbl", email = "122811297+lyqgzbl@users.noreply.github.com" }
 ]
+license = "MIT"
+keywords = ["nonebot", "nonebot2", "wuwa", "鸣潮", "emoji"]
 requires-python = ">=3.10, <4.0"
 dependencies = [
     "httpx>=0.27.0",
@@ -13,6 +15,11 @@ dependencies = [
     "nonebot-plugin-alconna>=0.50.0",
     "pydantic",
 ]
+
+[project.urls]
+Homepage = "https://github.com/lyqgzbl/nonebot-plugin-wuwa-emoji"
+Repository = "https://github.com/lyqgzbl/nonebot-plugin-wuwa-emoji"
+Documentation = "https://github.com/lyqgzbl/nonebot-plugin-wuwa-emoji#readme"
 
 [build-system]
 requires = ["uv_build>=0.12.14,<0.13.0"]
