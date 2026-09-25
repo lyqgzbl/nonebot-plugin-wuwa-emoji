@@ -1,0 +1,49 @@
+[project]
+name = "nonebot-plugin-wuwa-emoji"
+version = "0.1.0"
+description = "鸣潮表情包插件"
+readme = "README.md"
+authors = [
+    { name = "lyqgzbl", email = "122811297+lyqgzbl@users.noreply.github.com" }
+]
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "httpx>=0.27.0",
+    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.50.0",
+    "pydantic",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "I",
+    "E", "W", "F",
+    "UP",
+    "B",
+    "C4", "C90",
+    "SIM",
+    "PERF",
+    "RUF", "RUF100",
+    "PT",
+    "Q",
+]
+
+ignore = ["I001", "E402", "B008", "RUF001", "RUF002", "RUF003"]
+fixable = ["ALL"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
